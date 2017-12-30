@@ -1,0 +1,3 @@
+﻿  test.c
+d:\repo\cprograming\cprograming\test.c(9): error C2374: “z”: 重定义；多次初始化
+  d:\repo\cprograming\cprograming\test.c(6): note: 参见“z”的声明
