@@ -2,12 +2,14 @@
 #include<stdlib.h>
 #include<string.h>
 int fun(char str[], char del);
+int fun_1(char s[], int c);
+
 int main() {
 
 	char str[80], a;
 	gets_s(str, sizeof(str));
 	scanf_s("%c", &a,1);
-	fun(str, a);
+	fun_1(str, a);
 	puts(str);
 	system("pause");
 	return 0;
@@ -22,5 +24,13 @@ int fun(char str[], char del) {
 			}
 		}
 	}
+	return 0;
+}
+
+int fun_1(char s[], int c) {
+	char *q = s;
+	for (; *q; q++)
+		if (*q != c) *(s++) = *q;
+	*s = NULL;
 	return 0;
 }
