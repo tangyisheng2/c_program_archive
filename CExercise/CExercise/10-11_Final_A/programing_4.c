@@ -22,4 +22,5 @@ int fun(char str[], char del) {
 			}
 		}
 	}
+	return 0;
 }
